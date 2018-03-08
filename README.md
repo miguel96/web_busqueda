@@ -1,77 +1,113 @@
-# [Light Bootstrap Dashboard](http://demos.creative-tim.com/light-bootstrap-dashboard/examples/dashboard.html)
-[![version][version-badge]][CHANGELOG]
+# [Light Bootstrap Dashboard React](http://lbd-react.creative-tim.com/)
+[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/32/original/opt_lbd_thumbnail.jpg)
+![alt text](http://s3.amazonaws.com/creativetim_bucket/products/64/opt_lbdr_thumbnail.jpg)
 
-**[Light Bootstrap Dashboard](http://demos.creative-tim.com/light-bootstrap-dashboard/examples/dashboard.html)** is an admin dashboard template designed to be beautiful and simple. It is built on top of Bootstrap 4 and it is fully responsive. It comes with a big collections of elements that will offer you multiple possibilities to create the app that best fits your needs. It can be used to create admin panels, project management systems, web applications backend, CMS or CRM.
+**[Light Bootstrap Dashboard React](http://lbd-react.creative-tim.com/)** is an admin dashboard template designed to be beautiful and simple. It is built on top of [React Bootstrap](https://react-bootstrap.github.io/), using [Light Bootstrap Dashboard](https://www.creative-tim.com/product/light-bootstrap) and it is fully responsive. It comes with a big collections of elements that will offer you multiple possibilities to create the app that best fits your needs. It can be used to create admin panels, project management systems, web applications backend, CMS or CRM.
 
-The product represents a big suite of front-end developer tools that can help you jump start your project. We have created it thinking about things you actually need in a dashboard. Light Bootstrap Dashboard contains multiple handpicked and optimised plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customisation of this product.
+The product represents a big suite of front-end developer tools that can help you jump start your project. We have created it thinking about things you actually need in a dashboard. Light Bootstrap Dashboard React contains multiple handpicked and optimized plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customization of this product.
 
 It comes with 6 filter colors for the sidebar (`black`, `azure`,`green`,`orange`,`red`,`purple`) and an option to have a background image.
 
-Special thanks go to: Robert McIntosh for the notification system Chartist for the wonderful charts We are very excited to share this dashboard with you and we look forward to hearing your feedback!
-
 ## Links:
 
-+ [Bootstrap 3](http://demos.creative-tim.com/bs3/light-bootstrap-dashboard/examples/dashboard.html)
-+ [Bootstrap 4](http://demos.creative-tim.com/light-bootstrap-dashboard/examples/dashboard.html)
-+ [Documentation 3](https://demos.creative-tim.com/bs3/light-bootstrap-dashboard/documentation/tutorial-components.html)
-+ [Documentation 4](https://demos.creative-tim.com/light-bootstrap-dashboard/documentation/tutorial-components.html)
++ [Live Preview](http://lbd-react.creative-tim.com/)
 
 ## Quick Start:
 
 Quick start options:
 
-+ [Download from Creative Tim](https://www.creative-tim.com/product/light-bootstrap-dashboard).
++ [Download from Github](https://github.com/creativetimofficial/light-bootstrap-dashboard-react/archive/master.zip).
++ [Download from Creative Tim](https://www.creative-tim.com/product/light-bootstrap-dashboard-react).
++ Clone the repo: `git clone https://github.com/creativetimofficial/light-bootstrap-dashboard-react.git`.
 
 Other Products:
 
-+ [Download HTML FREE Version](https://www.creative-tim.com/product/light-bootstrap-dashboard).
-+ [Download Angular 2+ FREE Version ](https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2).
-+ [Download Angular 2+ PRO Version ](https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2).
-+ [Download React FREE Version ](https://www.creative-tim.com/product/light-bootstrap-dashboard-react).
-+ [Download React PRO Version ](https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react).
++ [Download HTML Version](https://www.creative-tim.com/product/light-bootstrap-dashboard).
++ [Download Angular 2+ Version ](https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2).
+
+## Terminal Commands
+
+1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
+2. Open Terminal
+3. Go to your file project
+4. Run in terminal: ```npm install```
+5. Then: ```npm start```
+6. Navigate to `http://localhost:3000/`
+7. (optional) Run in terminal `npm i -g cross-env`
 
 ### What's included
 
 Within the download you'll find the following directories and files:
 ```
-Light Bootstrap Dashboard
-├── assets
+Light Bootstrap Dashboard React
+├── Documentation
 │   ├── css
-│   ├── fonts
 │   ├── img
-│   ├── js
-│   │   ├── core
-│   │   │   ├── bootstrap.min.js
-│   │   │   ├── jquery.3.2.1.min.js
-│   │   │   └── popper.min.js
-│   │   ├── demo.js
-│   │   ├── light-bootstrap-dashboard.js
-│   │   └── plugins
-│   │       ├── bootstrap-datepicker.js
-│   │       ├── bootstrap-notify.js
-│   │       ├── bootstrap-switch.js
-│   │       ├── chartist.min.js
-│   │       ├── jquery.sharrre.js
-│   │       └── nouislider.min.js
-├── documentation
-│   ├── template.html
 │   └── tutorial-components.html
-├── examples
-│   ├── dashboard.html
-│   ├── icons.html
-│   ├── maps.html
-│   ├── notifications.html
-│   ├── table.html
-│   ├── typography.html
-│   ├── upgrade.html
-│   └── user.html
-├── CHANGELOG.md
-└── README.md
-
+├── README.md
+├── package.json
+├── public
+│   ├── assets
+│   │   └── img
+│   │       └── faces
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── assets
+    │   ├── css
+    │   ├── fonts
+    │   ├── img
+    │   │   └── faces
+    │   └── sass
+    │       ├── lbd
+    │       └── light-bootstrap-dashboard.scss
+    ├── components
+    │   ├── Card
+    │   │   └── Card.jsx
+    │   ├── Footer
+    │   │   └── Footer.jsx
+    │   ├── FormInputs
+    │   │   └── FormInputs.jsx
+    │   ├── Header
+    │   │   ├── Header.jsx
+    │   │   └── HeaderLinks.jsx
+    │   ├── Sidebar
+    │   │   └── Sidebar.jsx
+    │   ├── Tasks
+    │   │   └── Tasks.jsx
+    │   └── UserCard
+    │       └── UserCard.jsx
+    ├── containers
+    │   └── App
+    │       └── App.jsx
+    ├── elements
+    │   ├── CustomButton
+    │   │   └── CustomButton.jsx
+    │   ├── CustomCheckbox
+    │   │   └── CustomCheckbox.jsx
+    │   └── CustomRadio
+    │       └── CustomRadio.jsx
+    ├── index.js
+    ├── variables
+    │   └── Variables.jsx
+    └── views
+        ├── Dashboard
+        │   └── Dashboard.jsx
+        ├── Icons
+        │   └── Icons.jsx
+        ├── Maps
+        │   └── Maps.jsx
+        ├── Notifications
+        │   └── Notifications.jsx
+        ├── TableList
+        │   └── TableList.jsx
+        ├── Typography
+        │   └── Typography.jsx
+        └── UserProfile
+            └── UserProfile.jsx
 ```
-
 ## Useful Links
 
 More products from Creative Tim: <https://www.creative-tim.com/bootstrap-themes>
@@ -95,4 +131,7 @@ Google+: <https://plus.google.com/+CreativetimPage>
 Instagram: <https://instagram.com/creativetimofficial>
 
 [CHANGELOG]: ./CHANGELOG.md
-[version-badge]: https://img.shields.io/badge/version-2.0.1-blue.svg
+
+[LICENSE]: ./LICENSE.md
+[version-badge]: https://img.shields.io/badge/version-1.1.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
